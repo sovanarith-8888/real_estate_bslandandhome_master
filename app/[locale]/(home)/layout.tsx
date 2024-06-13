@@ -26,6 +26,7 @@ export default function RootLayout({
 >) {
   return (
     <html lang={locale}>
+      {/* <link rel="shortcut icon" href="/app/favico.ico" type="image/x-icon" /> */}
       <body className={`${inter.variable} ${suwannaphum.variable}`}>
         {children}
       </body>
