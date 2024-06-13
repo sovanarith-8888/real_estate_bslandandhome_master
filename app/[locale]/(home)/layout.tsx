@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "@/app/globals.css";
 import { SeoDescription } from "@/lib/seo_description";
-import {inter,suwannaphum} from "@/app/(home)/fonts";
+import { inter, suwannaphum } from "@/app/[locale]/(home)/fonts";
 
 //const inter = Inter({ subsets: ["latin"] });
 
@@ -11,14 +11,24 @@ export const metadata: Metadata = {
   description: SeoDescription.TITLE_DESCRIPTINO,
 };
 
+interface RootLayoutProps{
+  children: React.ReactNode;
+  params: {
+    locale: string
+  }
+}
+
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+  params: {locale}
+}: Readonly<
+  RootLayoutProps
+>) {
   return (
-    <html lang="en">
-      <body className={`${inter.variable} ${suwannaphum.variable}`}>{children}</body>
+    <html lang={locale}>
+      <body className={`${inter.variable} ${suwannaphum.variable}`}>
+        {children}
+      </body>
     </html>
   );
 }
