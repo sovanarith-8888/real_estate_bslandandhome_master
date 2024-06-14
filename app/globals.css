@@ -37,3 +37,6 @@ a{
 .fontAudiowide{
   font-family: var(--font-audiowide) !important;
 }
+.bg{
+  background-color: block;
+}
