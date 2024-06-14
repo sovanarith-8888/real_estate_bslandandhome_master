@@ -2,6 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
+html{
+  font-size: 62.5% !important;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
 body{
   font-family: var(--font-inter), var(--font-suwannaphum) !important;
+  letter-spacing: 0.02rem;
+  line-height: 1.5;
+  color: #0f172a;
+}
+h1{
+  font-size: 3.8rem;
+  color: #0f172a;
+}
+h2{
+  font-size: 3.3rem;
+}
+p,li,button,input,a{
+  font-size: 1.5rem !important;
+}
+a{
+  text-decoration: none;
+  color: rgb(115, 25, 199);
+}
+
+
+/* 404 font only */
+.fontAudiowide{
+  font-family: var(--font-audiowide) !important;
 }

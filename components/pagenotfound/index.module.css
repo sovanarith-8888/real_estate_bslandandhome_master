@@ -1,0 +1,38 @@
+.defaultStyle{
+  font-size: 62.5%;
+}
+.main{
+  @apply flex h-[100vh] justify-center items-center gap-12
+}
+.fontAudiowide{
+  font-family: "Audiowide", sans-serif !important;
+  color: #F50057;
+  font-size: 5rem;
+}
+.imageNotfound{
+  width: 55rem;
+}
+.title{
+  color: #1d5f70;
+  display: flex;
+}
+.a{
+  width: fit-content;
+  color: #F50057 !important;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  display: flex;
+  gap: 5px;
+
+}
+.a:hover{
+  color: #a31c4b !important;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.pp{
+  color: #1d5f70;;
+  display: flex;
+  gap: 10px;
+}

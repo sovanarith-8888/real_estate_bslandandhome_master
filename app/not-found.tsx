@@ -1,8 +1,11 @@
 'use client'
 
+import PageNotFound from "@/components/pagenotfound/PageNotFound"
+import "@/app/globals.css";
+
 const NotFound = () => {
   return (
-    <div>page not found</div>
+    <PageNotFound/>
   )
 }
 
